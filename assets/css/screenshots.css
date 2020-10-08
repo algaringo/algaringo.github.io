@@ -1,0 +1,217 @@
+.fa {
+    margin: 0.5em;
+    width: 3%;
+    color: #000000;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.outer {
+  position: relative;
+  margin: auto;
+  width: 30px;
+  margin-top: 200px;
+  cursor: pointer;
+    visibility: visible;
+}
+
+.outer0{
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 325px;
+}
+
+.outer1{
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 325px;
+}
+
+.outer2{
+    position: absolute;
+    margin-top: -103px;
+    margin-left: 325px;
+}
+
+#closemodal {
+    visibility: hidden;
+}
+
+.btn1 {
+    min-width: 145px;
+    line-height: 50px;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 0;
+    transition: box-shadow 0.25s ease-in-out;
+    -moz-transition: box-shadow 0.25s ease-in-out;
+    -webkit-transition: box-shadow 0.25s ease-in-out;
+    -o-transition: box-shadow 0.25s ease-in-out;
+    -ms-transition: box-shadow 0.25s ease-in-out;
+}
+
+@media only screen and (max-width: 1199px){
+.outer {
+    visibility: hidden;
+}
+
+#closemodal {
+    visibility: visible;
+}
+}
+@media only screen and (max-width: 600px){
+#closemodal {
+    visibility: visible;
+    font-size: 12px;
+}
+.btn1 { 
+    padding: 5px 15px;
+    margin: 2px;
+    font-size: 12px;
+}
+}
+
+#widesh {
+    display: block;
+    margin-top: 10px;
+}
+
+#narrowsh {
+    display: none;
+    position: absolute;
+}
+@media only screen and (max-width: 450px){
+#closemodal {
+    display: block;
+    font-size: 14px;
+}
+.btn1 { 
+    padding: 5px 15px;
+    font-size: 14px;
+}
+#widesh {
+    display: none;
+    position: absolute;
+}
+
+#narrowsh {
+    visibility: visible;
+    position: relative;
+}
+}
+
+
+#centermargin {
+    margin-top: 10px;
+}
+
+
+.inner {
+  width: inherit;
+  text-align: center;
+    position: absolute;
+    font-size: 12px;
+}
+
+ul li {
+    text-decoration: none;
+    display: block;
+    position: relative;
+}
+
+label { 
+  color: black;
+  font-size: .8em; 
+  line-height: 2em;
+  text-transform: uppercase;
+  transition: all .3s ease-in;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.inner:before, .inner:after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: inherit;
+  background: #FFC107;
+  left: 0;
+  transition: all .3s ease-in;
+}
+
+.inner:before {
+  top: 50%; 
+  transform: rotate(45deg);  
+}
+
+.inner:after {  
+  bottom: 50%;
+  transform: rotate(-45deg);  
+}
+
+.outer:hover label {
+  opacity: 1;
+}
+
+.outer:hover .inner:before,
+.outer:hover .inner:after {
+  transform: rotate(0);
+}
+
+.outer:hover .inner:before {
+  top: 0;
+}
+
+.outer:hover .inner:after {
+  bottom: 0;
+}
+
+.foo {
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+.space {
+    margin-left: 10%;
+    margin-right: 10%;
+}
