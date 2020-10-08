@@ -52,6 +52,15 @@
     margin-bottom: 20px;
 }
 
+#mainshadow {
+    border-radius: 15px;
+    background: black;
+    color: white;
+    padding: 8px 25px 8px 25px;
+    font-weight: 800;
+    font-size: 12px;
+}
+
 #bgshadow {
     border-radius: 15px 50px 30px;
     background: gray;
@@ -67,7 +76,7 @@
     color: white;
     font-weight: 800;
     font-size: 12px;
-    margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 a {
@@ -76,6 +85,7 @@ a {
     -webkit-transition: color 0.25s ease-in-out;
     -o-transition: color 0.25s ease-in-out;
     -ms-transition: color 0.25s ease-in-out;
+    color: #000000;
 }
 
 a:focus,
